@@ -16,7 +16,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/backlight.h>
-#include <dt-bindings/zmk/rgb.h>
 
 / {
   behaviors {
@@ -60,11 +59,11 @@
 
         layer_mod {
             bindings = <
- &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                   &trans  &macro_redo                  &none            &none              &none    &none  &kp PG_UP
- &trans         &none         &none         &none         &none         &none            &bootloader                                                              &bootloader        &none                  &none     &kp UP_ARROW              &none    &none  &kp PG_DN
- &trans         &none         &none         &none         &none         &none                  &none  &trans  &trans                  &bt BT_CLR      &trans            &none     &kp HOME         &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp END     &trans
- &trans   &macro_undo    &macro_cut   &macro_copy  &macro_paste         &none                                 &trans                      &trans                                     &none                  &none            &none              &none    &none     &trans
- &trans         &none         &none    &bl BL_INC    &bl BL_DEC                               &trans  &trans  &trans                      &trans  &bl BL_TOG  &rgb_ug RGB_TOG               &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET   &trans     &trans
+ &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4             &bt BT_CLR                                                  &trans        &none                  &none            &none                 &none    &none  &kp PG_UP
+ &trans         &none         &none         &none         &none         &none             &bl BL_TOG                                                  &trans  &macro_redo                  &none     &kp UP_ARROW                 &none    &none  &kp PG_DN
+ &trans         &none         &none         &none         &none         &none            &bootloader  &trans  &trans                  &trans  &trans  &trans     &kp HOME         &kp LEFT_ARROW   &kp DOWN_ARROW       &kp RIGHT_ARROW  &kp END     &trans
+ &trans   &macro_undo    &macro_cut   &macro_copy  &macro_paste         &none                                 &trans                  &trans                        &none                  &none            &none  &macro_ptr_to_member    &none     &trans
+ &trans         &none         &none    &bl BL_INC    &bl BL_DEC                               &trans  &trans  &trans                  &trans  &trans  &trans               &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE     &kp RIGHT_BRACKET   &trans     &trans
             >;
         };
 
