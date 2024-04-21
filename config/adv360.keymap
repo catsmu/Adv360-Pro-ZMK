@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
-   &kp ESC         &kp N1            &kp N2                &kp N3                 &kp N4  &kp N5               &none                                                                   &none  &kp N6          &kp N7           &kp N8            &kp N9             &kp N0  &kp EQUAL
-   &kp TAB          &kp Q             &kp W                 &kp E                  &kp R   &kp T               &none                                                                   &none   &kp Y           &kp U            &kp I             &kp O              &kp P  &kp MINUS
-     &none          &kp A             &kp S                 &kp D                  &kp F   &kp G               &none  &kp DEL  &kp LEFT_WIN                   &kp LGUI    &kp TAB      &none   &kp H           &kp J            &kp K             &kp L           &kp SEMI    &kp SQT
- &kp LSHFT          &kp Z             &kp X                 &kp C                  &kp V   &kp B                                   &kp LALT                   &kp RALT                         &kp N           &kp M        &kp COMMA           &kp DOT      &kp BACKSLASH  &kp RSHFT
-     &mo 1  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp BSPC    &mo 2     &kp LCTRL                  &kp RCTRL  &kp ENTER  &kp SPACE          &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &mo 1
+   &kp ESC            &kp N1             &kp N2                &kp N3                 &kp N4  &kp N5               &none                                                                   &none  &kp N6          &kp N7           &kp N8     &kp N9          &kp N0  &kp MINUS
+   &kp TAB             &kp Q              &kp W                 &kp E                  &kp R   &kp T               &none                                                                   &none   &kp Y           &kp U            &kp I      &kp O           &kp P  &kp EQUAL
+     &none             &kp A              &kp S                 &kp D                  &kp F   &kp G               &none  &kp DEL  &kp LEFT_WIN                   &kp LGUI    &kp TAB      &none   &kp H           &kp J            &kp K      &kp L        &kp SEMI    &kp SQT
+ &kp LSHFT             &kp Z              &kp X                 &kp C                  &kp V   &kp B                                   &kp LALT                   &kp RALT                         &kp N           &kp M        &kp COMMA    &kp DOT       &kp SLASH  &kp RSHFT
+     &mo 1  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp BSPC    &mo 2     &kp LCTRL                  &kp RCTRL  &kp ENTER  &kp SPACE          &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp EQUAL  &kp UNDERSCORE      &mo 1
             >;
         };
 
@@ -59,11 +59,11 @@
 
         layer_mod {
             bindings = <
- &trans  &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4             &bt BT_CLR                                                  &trans        &none           &none           &none                 &none      &none  &kp PG_UP
- &trans         &none                 &none         &none         &none         &none             &bl BL_TOG                                                  &trans  &macro_redo           &none    &kp UP_ARROW                 &none      &none  &kp PG_DN
- &trans         &none                 &none         &none         &none         &none            &bootloader  &trans  &trans                  &trans  &trans  &trans     &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW       &kp RIGHT_ARROW    &kp END     &trans
- &trans   &macro_undo            &macro_cut   &macro_copy  &macro_paste         &none                                 &trans                  &trans                        &none           &none           &none  &macro_ptr_to_member  &kp GRAVE     &trans
- &trans        &trans  &macro_ptr_to_member        &trans        &trans                               &trans  &trans  &trans                  &trans  &trans  &trans                       &trans          &trans                &trans     &trans     &trans
+ &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4             &bt BT_CLR                                                  &trans        &none           &none           &none                 &none          &none  &kp PG_UP
+ &trans         &none         &none         &none         &none         &none             &bl BL_TOG                                                  &trans  &macro_redo       &kp PG_UP    &kp UP_ARROW             &kp PG_DN          &none  &kp PG_DN
+ &trans         &none         &none         &none         &none         &none            &bootloader  &trans  &trans                  &trans  &trans  &trans     &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW       &kp RIGHT_ARROW        &kp END  &kp GRAVE
+ &trans   &macro_undo    &macro_cut   &macro_copy  &macro_paste         &none                                 &trans                  &trans                        &none           &none           &none  &macro_ptr_to_member  &kp BACKSLASH     &trans
+ &trans        &trans        &trans        &trans        &trans                               &trans  &trans  &trans                  &trans  &trans  &trans                       &trans          &trans                &trans       &kp PIPE     &trans
             >;
         };
 
